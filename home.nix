@@ -7,9 +7,10 @@
 
 
   home.stateVersion = "25.11"; # Please read the comment before changing.
-
-  home.packages = [
- 
+  
+  imports = [
+    ./packages.nix
+    ./modules
   ];
 
  
