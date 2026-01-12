@@ -13,12 +13,13 @@
   outputs =
     { nixpkgs, home-manager, ... }:
     let
+      lib = nixpkgs.lib;
       system = "aarch64-darwin";
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
       homeConfigurations."hao" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+        inherit pkgs lib;
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
