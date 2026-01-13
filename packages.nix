@@ -6,6 +6,9 @@
     git
     gh
     lazygit
+
+    helix
+    kitty
     
   ];
 }
