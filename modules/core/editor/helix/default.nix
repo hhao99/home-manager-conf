@@ -5,6 +5,6 @@
         settings = {
             theme = "autumn_night_transparent";
             
-        }
-    }
+        };
+    };
 }
